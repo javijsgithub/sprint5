@@ -36,6 +36,7 @@ return (
     <div className="container mt-5">
       <div className="row justify-content-center">
         <div className="col-md-6">
+
           <Card
             imagen={tutorialData[primerPaso].img} 
             titulo={tutorialData[primerPaso].tit}
@@ -45,6 +46,7 @@ return (
             paso={primerPaso}
             totalPasos={tutorialData.length}
           />
+          
         </div>
       </div>
     </div>

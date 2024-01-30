@@ -1,0 +1,19 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+.indicadores {
+  display:flex;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.circulo-icono {
+  color: rgb(168, 166, 166);
+  width: 25px;
+  margin-left: 5px;
+}
+
+.raya-icono {
+  width: 25px;
+  
+}

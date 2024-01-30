@@ -51,7 +51,7 @@
 
 .avanzar-1 {
   width: 50px;
-  margin-left: 280px;
+  margin-left: 185px;
   align-items: center;
   margin-bottom: 10px;
 
@@ -68,12 +68,12 @@
   width: 50px;
   display: flex;
   align-items: center;
-  margin-left: 225px;
+  margin-left: 130px;
   margin-bottom: 10px;
 }
 .retroceder-1 {
   width: 50px;
-  margin-left: 280px;
+  margin-left: 185px;
   align-items: center;
   margin-bottom: 10px;
 }
