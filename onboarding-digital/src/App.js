@@ -28,6 +28,10 @@ function App() {
     setPrimerPaso(primerPaso + 1);
   };
 
+  const pasoAnt = () => {
+    setPrimerPaso(primerPaso - 1);
+  };
+
 return (
     <div className="container mt-5">
       <div className="row justify-content-center">
@@ -37,6 +41,9 @@ return (
             titulo={tutorialData[primerPaso].tit}
             descripcion={tutorialData[primerPaso].desc}
             siguientePaso={sigPaso} 
+            pasoAnterior={pasoAnt}
+            paso={primerPaso}
+            totalPasos={tutorialData.length}
           />
         </div>
       </div>

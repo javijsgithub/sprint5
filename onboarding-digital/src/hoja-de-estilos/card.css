@@ -36,20 +36,58 @@
 }
 
 .card-text {
-  color: rgb(61, 60, 60);
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
 }
 
-.avanzar-retroceder {
+.text {
+  color: rgb(61, 60, 60);
+  margin-left: 10px;
+}
+.botones {
+  display: flex;
+}
+
+.avanzar-1 {
+  width: 50px;
+  margin-left: 280px;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+.avanzar {
+  width: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+.retroceder {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  margin-left: 225px;
+  margin-bottom: 10px;
+}
+.retroceder-1 {
+  width: 50px;
+  margin-left: 280px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .boton-avanzar {
   color: rgb(75, 74, 74);
   width: 50px;
   height: 50px;
-  margin-left: 270px;
+  cursor: pointer;
+}
+
+.boton-retroceder {
+  width: 50px;
+  height: 50px;
   cursor: pointer;
 }
 
