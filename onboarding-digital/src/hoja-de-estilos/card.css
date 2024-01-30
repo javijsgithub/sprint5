@@ -2,5 +2,57 @@
 
 
 .card {
-    width: 100%;
+  width: 350px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin: auto;
+  border-radius: 25px;
 }
+
+.card-img-top {
+  background-color: rgb(3, 97, 97);
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  height: 300px;
+}
+
+.card-img-top:nth-of-type(1) {
+  background-color: rgb(3, 97, 97);
+}
+
+.card-img-top:nth-of-type(2) {
+  background-color: rgb(187, 184, 184);
+}
+
+.card-img-top:nth-of-type(3) {
+  background-color: rgb(233, 177, 73);
+}
+
+.card-header {
+  margin-top: 15px;
+  font-size: larger;
+  font-weight: 750;
+  font-family: Arial, Helvetica, sans-serif;  
+}
+
+.card-text {
+  color: rgb(61, 60, 60);
+}
+
+.avanzar-retroceder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boton-avanzar {
+  color: rgb(75, 74, 74);
+  width: 50px;
+  height: 50px;
+  margin-left: 270px;
+  cursor: pointer;
+}
+
+
+
+
