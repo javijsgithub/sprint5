@@ -6,11 +6,24 @@ import 'google-fonts';
 import Indicator from '../componentes/indicator';
 
 const Card = ({ titulo, descripcion, siguientePaso, pasoAnterior, totalPasos, paso, imagen }) => {
-  
+
+  const colorFondoImagenCard = (paso) => {
+
+    if (paso === 0) {
+      return "rgb(3, 97, 97)";
+    } else if (paso === 1) {
+      return "rgb(187, 184, 184)";
+    } else if (paso === 2) {
+      return "rgb(233, 177, 73)";
+    } 
+  };
+
   return (
     <div className="card mb-1">
-      <img src={require(`../imagenes/img-${imagen}.svg`)} className="card-img-top" alt="imagen" />
-      <div className="card-header">{titulo}
+      <div className={'imagenes'} style={{backgroundColor: colorFondoImagenCard(paso)}}>
+        <img src={require(`../imagenes/img-${imagen}.svg`)} className="card-img-top" alt="imagen" />
+      </div>
+      <div className='card-header'>{titulo}
       </div>
       <div className='card-text'>
         <p className="text">{descripcion}</p>
@@ -26,17 +39,17 @@ const Card = ({ titulo, descripcion, siguientePaso, pasoAnterior, totalPasos, pa
             />
 
             {paso === 0 && (
-              <div className="avanzar-1" onClick={siguientePaso}><BsArrowRightCircleFill className='boton-avanzar' /></div>
+              <div className="avanzar-c1" onClick={siguientePaso}><BsArrowRightCircleFill className='boton-avanzar' /></div>
             )}
 
             {paso > 0 && paso < totalPasos - 1 && (
             <>          
-              <div className="retroceder" onClick={pasoAnterior}><BsArrowLeftCircle className='boton-retroceder' /></div>
-              <div className="avanzar" onClick={siguientePaso}><BsArrowRightCircleFill className='boton-avanzar' /></div>
+              <div className="retroceder-c2" onClick={pasoAnterior}><BsArrowLeftCircle className='boton-retroceder' /></div>
+              <div className="avanzar-c2" onClick={siguientePaso}><BsArrowRightCircleFill className='boton-avanzar' /></div>
             </>
             )}
             {paso === totalPasos - 1 && (
-              <div className="retroceder-1" onClick={pasoAnterior}><BsArrowLeftCircle className='boton-retroceder' /></div>
+              <div className="retroceder-c3" onClick={pasoAnterior}><BsArrowLeftCircle className='boton-retroceder' /></div>
             )}                  
           </div>
     </div>
@@ -44,3 +57,5 @@ const Card = ({ titulo, descripcion, siguientePaso, pasoAnterior, totalPasos, pa
 };
 
   export default Card;
+
+  

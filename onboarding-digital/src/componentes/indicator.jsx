@@ -18,7 +18,7 @@ const Indicator = ({ pasoAct, totPasos, antPaso, pasoSig }) => {
     <div className="indicadores">
       {Array.from({ length: totPasos }).map((_, index) => (
         <div key={index} className="icon-container" onClick={() => pasoClick(index)}>          
-          {index === pasoAct && <TiMinus className="raya-icono" onClick={antPaso} />}
+          {index === pasoAct && <TiMinus className="raya-icono" />}
           {index !== pasoAct &&<VscCircleFilled className="circulo-icono" />}
         </div>
       ))}
